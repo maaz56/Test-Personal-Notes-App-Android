@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_recycle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/notesCardBody"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/date_time_note_custom_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/card_view_margin"
+                android:layout_marginRight="@dimen/card_view_margin"
+                android:layout_marginTop="@dimen/card_view_margin"
+                android:alpha=".87"
+                android:text="Date AND TIME"
+                android:textColor="@color/notesSecondaryTextColor" />
+
+            <TextView
+                android:id="@+id/title_note_custom_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_view_margin"
+                android:layout_marginEnd="@dimen/card_view_margin"
+                android:layout_marginLeft="@dimen/card_view_margin"
+                android:layout_marginRight="@dimen/card_view_margin"
+                android:layout_marginStart="@dimen/card_view_margin"
+                android:text="Title"
+                android:textColor="@color/notesSecondaryTextColor"
+                android:textSize="@dimen/home_title" />
+
+            <LinearLayout
+                android:id="@+id/home_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_view_margin"
+                android:layout_marginEnd="@dimen/card_view_margin"
+                android:layout_marginLeft="@dimen/card_view_margin"
+                android:layout_marginRight="@dimen/card_view_margin"
+                android:layout_marginStart="@dimen/card_view_margin"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/description_note_custom_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="@dimen/card_view_margin"
+                android:layout_marginEnd="@dimen/card_view_margin"
+                android:layout_marginLeft="@dimen/card_view_margin"
+                android:layout_marginRight="@dimen/card_view_margin"
+                android:layout_marginStart="@dimen/card_view_margin"
+
+                android:alpha=".87"
+                android:text="Description is Here"
+                android:textColor="@color/notesSecondaryTextColor"
+                android:textSize="@dimen/home_description" />
+
+            <TextView
+                android:id="@+id/id_note_custom_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

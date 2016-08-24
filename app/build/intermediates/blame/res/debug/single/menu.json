@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/build/intermediates/res/merged/debug/menu/menu_trash_empty.xml",
+        "source": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/src/main/res/menu/menu_trash_empty.xml"
+    },
+    {
+        "merged": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/build/intermediates/res/merged/debug/menu/menu_detail_note.xml",
+        "source": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/src/main/res/menu/menu_detail_note.xml"
+    },
+    {
+        "merged": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/build/intermediates/res/merged/debug/menu/actions_archive_delete.xml",
+        "source": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/src/main/res/menu/actions_archive_delete.xml"
+    },
+    {
+        "merged": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/build/intermediates/res/merged/debug/menu/actions_image_selection.xml",
+        "source": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/src/main/res/menu/actions_image_selection.xml"
+    },
+    {
+        "merged": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/build/intermediates/res/merged/debug/menu/action_notes.xml",
+        "source": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/src/main/res/menu/action_notes.xml"
+    }
+]

@@ -1,0 +1,30 @@
+-keep class com.example.maaz.personalnotesapp.NotesActivity { <init>(); }
+-keep class com.example.maaz.personalnotesapp.NoteDetailActivity { <init>(); }
+-keep class com.example.maaz.personalnotesapp.TrashActivity { <init>(); }
+-keep class com.example.maaz.personalnotesapp.ArchivesActivity { <init>(); }
+-keep class com.example.maaz.personalnotesapp.HelpFeedActivity { <init>(); }
+-keep class com.example.maaz.personalnotesapp.GoogleDriveSelectionActivity { <init>(); }
+-keep class com.example.maaz.personalnotesapp.AppAuthenticationActivity { <init>(); }
+-keep class com.example.maaz.personalnotesapp.GoogleDriveDirectoryNameGetterActivity { <init>(); }
+-keep class com.example.maaz.personalnotesapp.DropboxPickerActivity { <init>(); }
+-keep class com.dropbox.client2.android.AuthActivity { <init>(); }
+-keep class com.example.maaz.personalnotesapp.AlarmRecevier { <init>(); }
+-keep class com.example.maaz.personalnotesapp.AppProvider { <init>(); }
+-keep class com.google.android.gms.ads.AdActivity { <init>(); }
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(); }
+-keep class com.google.android.gms.appinvite.PreviewActivity { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementContentProvider { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}
+-keep class com.android.tools.fd.** {
+    *;
+}
+-dontnote com.android.tools.fd.**,android.support.multidex.MultiDexExtractor

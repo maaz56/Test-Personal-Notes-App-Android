@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.maaz.personalnotesapp">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.prmission.READ.GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PersonalNotes">
+        <activity
+            android:name=".NotesActivity"
+            android:label="@string/notes">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NoteDetailActivity"
+            android:label="@string/title_activity_notes"></activity>
+        <activity
+            android:name=".TrashActivity"
+            android:label="@string/trash"></activity>
+        <activity
+            android:name=".ArchivesActivity"
+            android:label="@string/archives"></activity>
+        <activity
+            android:name=".HelpFeedActivity"
+            android:label="@string/helpandfeedback"
+            android:noHistory="true"></activity>
+        <activity
+            android:name=".GoogleDriveSelectionActivity"
+            android:label="@string/title_activity_list_files"></activity>
+        <activity
+            android:name=".AppAuthenticationActivity"
+            android:label="@string/title_activity_online_photo_selection"
+            android:noHistory="true"
+            android:parentActivityName=".NotesActivity"></activity>
+        <activity
+            android:name=".GoogleDriveDirectoryNameGetterActivity"
+            android:label="@string/title_activity_online_photo_selection"
+            android:noHistory="true"
+            android:parentActivityName=".NotesActivity"></activity>
+        <activity
+            android:name=".DropboxPickerActivity"
+            android:label="@string/title_activity_selection_drop_box"></activity>
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <data android:scheme="db-orur931lo59qpuo" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlarmRecevier"
+            android:process=":remote" />
+
+        <provider
+            android:name=".AppProvider"
+            android:authorities="com.example.maaz.personalnotesapp"
+            android:exported="true"
+            android:readPermission="com.example.maaz.personalnotesapp.provider.READWRITE"
+            android:writePermission="com.example.maaz.personalnotesapp.provider.READWRITE" />
+
+        <meta-data
+            android:name="com.google.android.gms.services.version"
+            android:value="@integer/google_play_services_version" />
+
+
+
+    </application>
+
+</manifest>
