@@ -274,9 +274,9 @@ public final class R {
 		public static final int wallet_buy_button_place_holder = 0x7f07003e;
 	}
 	public static final class style {
-		public static final int Theme_AppInvite_Preview = 0x7f0a0106;
+		public static final int Theme_AppInvite_Preview = 0x7f0a0107;
 		public static final int Theme_AppInvite_Preview_Base = 0x7f0a001d;
-		public static final int Theme_IAPTheme = 0x7f0a010e;
+		public static final int Theme_IAPTheme = 0x7f0a010f;
 		public static final int WalletFragmentDefaultButtonTextAppearance = 0x7f0a0117;
 		public static final int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f0a0118;
 		public static final int WalletFragmentDefaultDetailsTextAppearance = 0x7f0a0119;

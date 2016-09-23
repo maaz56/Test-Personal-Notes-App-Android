@@ -134,6 +134,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         List<NavigationDrawerItem> items = new ArrayList<>();
         items.add(new NavigationDrawerItem(android.R.drawable.ic_menu_agenda, AppConstant.DRAWER_NOTES));
         items.add(new NavigationDrawerItem(android.R.drawable.ic_popup_reminder, AppConstant.DRAWER_REMINDERS));
+        items.add(new NavigationDrawerItem(android.R.drawable.ic_menu_gallery, AppConstant.DRAWER_ARCHIVES));
         items.add(new NavigationDrawerItem(android.R.drawable.ic_menu_delete, AppConstant.DRAWER_TRASH));
         items.add(new NavigationDrawerItem(android.R.drawable.ic_menu_preferences, AppConstant.DRAWER_SETTINGS));
         items.add(new NavigationDrawerItem(android.R.drawable.ic_menu_help, AppConstant.DRAWER_HELP_FEEDBACK));
@@ -168,6 +169,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                     case 4:
                         mNextActivity = AppAuthenticationActivity.class;
                         mType = SETTINGS;
+                        break;
                     case 5:
                         mNextActivity = HelpFeedActivity.class;
                         break;

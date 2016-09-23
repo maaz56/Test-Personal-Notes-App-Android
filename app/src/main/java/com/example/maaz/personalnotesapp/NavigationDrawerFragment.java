@@ -47,7 +47,7 @@ public class NavigationDrawerFragment extends Fragment {
         View containerView = getActivity().findViewById(fragmentId);
         mDrawerLayout = drawerLayout;
         mDrawerToggle = new ActionBarDrawerToggle(getActivity(), drawerLayout, toolbar,
-                R.string.drawer_open,
+               R.string.drawer_open,
                 R.string.drawer_close) {
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {

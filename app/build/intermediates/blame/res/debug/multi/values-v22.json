@@ -81,6 +81,27 @@
                         "endOffset": 896
                     }
                 }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 901,
+                    "endLine": 17,
+                    "endColumn": 12,
+                    "endOffset": 1050
+                },
+                "from": {
+                    "file": "/media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/src/main/res/values-v22/styles.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endLine": 6,
+                        "endColumn": 12,
+                        "endOffset": 205
+                    }
+                }
             }
         ]
     }

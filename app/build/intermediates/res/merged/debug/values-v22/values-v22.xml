@@ -12,4 +12,8 @@
         <!-- We use the framework provided edit text background on 22+ -->
         <item name="editTextBackground">?android:attr/editTextBackground</item>
     </style>
+    <style name="Theme.PersonalNotes" parent="Theme.Base">
+        <item name="android:navigationBarColor">?colorPrimaryDark</item>
+        
+    </style>
 </resources>

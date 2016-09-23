@@ -17,7 +17,7 @@
 
     <style name="ActionBarThemeOverlay" parent="">
         <item name="android:textColorPrimary">@color/notesPrimaryTextColor</item>
-        <item name="colorControlHighlight">@color/notesBackgroundColor</item>
+      <item name="colorControlHighlight">@color/notesBackgroundColor</item>
         <item name="android:actionMenuTextColor">@color/notesPrimaryTextColor</item>
         <item name="android:textColorSecondary">@color/notesPrimaryTextColor</item>
         <item name="android:background">@color/notesPrimaryBackgroundColor</item>

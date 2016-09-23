@@ -20,9 +20,9 @@ public class Note {
         this.mDescription = mDescription;
         this.mDate = mDate;
         this.mTime = mTime;
-        this.mType = mType;
         this.mId = mId;
         this.mStrogeSelection = mStrogeSelection;
+        this.mType = mType;
     }
 
     public Note(String reminderString) {
