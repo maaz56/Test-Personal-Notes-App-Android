@@ -76,7 +76,7 @@
 
         <provider
             android:name=".AppProvider"
-            android:authorities="com.example.maaz.personalnotesapp"
+            android:authorities="com.example.maaz.personalnotesapp.provider"
             android:exported="true"
             android:readPermission="com.example.maaz.personalnotesapp.provider.READWRITE"
             android:writePermission="com.example.maaz.personalnotesapp.provider.READWRITE" />

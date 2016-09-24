@@ -11,17 +11,17 @@ public class Note {
     private String mTitle, mDescription, mDate, mTime, mImagePath, mType;
     private int mId;
     private boolean mHasNoImage = false;
-    private int mStrogeSelection;
+    private int mStorageSelection;
 
     private Bitmap mBitmap;
 
-    public Note(String mTitle, String mDescription, String mDate, String mTime, int mId, int mStrogeSelection, String mType) {
+    public Note(String mTitle, String mDescription, String mDate, String mTime, int mId, int mStorageSelection, String mType) {
         this.mTitle = mTitle;
         this.mDescription = mDescription;
         this.mDate = mDate;
         this.mTime = mTime;
         this.mId = mId;
-        this.mStrogeSelection = mStrogeSelection;
+        this.mStorageSelection = mStorageSelection;
         this.mType = mType;
     }
 
@@ -34,10 +34,10 @@ public class Note {
         this.mDate = fields[5];
         this.mTime = fields[3];
         this.mImagePath = fields[4];
-        this.mStrogeSelection = Integer.parseInt(fields[6]);
+        this.mStorageSelection = Integer.parseInt(fields[6]);
         if (mType.equals(AppConstant.NORMAL)) {
             this.mDescription = fields[7];
-            Note aNote = new Note(this.mTitle, this.mDescription, this.mDate, this.mTime, this.mId, this.mStrogeSelection, this.mType);
+            Note aNote = new Note(this.mTitle, this.mDescription, this.mDate, this.mTime, this.mId, this.mStorageSelection, this.mType);
             aNote.setImagePath(this.mImagePath);
         } else {
             String list = "";
@@ -54,7 +54,7 @@ public class Note {
                 + mTime + "$"
                 + mImagePath + "$"
                 + mDate + "$"
-                + mStrogeSelection + "$"
+                + mStorageSelection + "$"
                 + mDescription;
         }
 
@@ -135,10 +135,10 @@ public class Note {
     }
 
     public int getStrogeSelection() {
-        return mStrogeSelection;
+        return mStorageSelection;
     }
 
     public void setStrogeSelection(int strogeSelection) {
-        mStrogeSelection = strogeSelection;
+        mStorageSelection = strogeSelection;
     }
 }

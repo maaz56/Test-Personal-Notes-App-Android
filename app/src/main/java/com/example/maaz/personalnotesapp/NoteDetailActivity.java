@@ -61,7 +61,7 @@ public class NoteDetailActivity extends BaseActivity
     private static int sMonth, sYear, sHour, sDay, sMinute, sSecond;
 
     private DropboxAPI<AndroidAuthSession> mApi;
-    private File mDropboxFile;
+    private File mDropBoxFile;
     private String mCameraFileName;
     private NoteCustomList mNoteCustomList;
 
@@ -394,7 +394,7 @@ public class NoteDetailActivity extends BaseActivity
             }
         }
 
-        DropboxImageUploadAsync upload = new DropboxImageUploadAsync(this, mApi, mDropboxFile, AppConstant.NOTE_PREFIX + GDUT.time2Title(null) + AppConstant.JPG);
+        DropboxImageUploadAsync upload = new DropboxImageUploadAsync(this, mApi, mDropBoxFile, AppConstant.NOTE_PREFIX + GDUT.time2Title(null) + AppConstant.JPG);
         upload.execute();
         ContentValues values = createContentValues(AppConstant.NOTE_PREFIX + GDUT.time2Title(null), AppConstant.DROP_BOX_SELECTION, true);
         createNoteAlarm(values, insertNote(values));
@@ -592,9 +592,9 @@ public class NoteDetailActivity extends BaseActivity
         if (mIsImageSet) {
             String fileName = AppConstant.NOTE_PREFIX + GDUT.time2Title(null) + AppConstant.JPG;
             values.put(NotesContract.NotesColumns.NOTES_IMAGE, fileName);
-            mDropboxFile = new File(getApplicationContext().getCacheDir(), fileName);
+            mDropBoxFile = new File(getApplicationContext().getCacheDir(), fileName);
             try {
-                mDropboxFile.createNewFile();
+                mDropBoxFile.createNewFile();
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -605,7 +605,7 @@ public class NoteDetailActivity extends BaseActivity
             newImage.compress(Bitmap.CompressFormat.PNG, 0, byteArrayOutputStream);
             byte[] bitMapData = byteArrayOutputStream.toByteArray();
             try {
-                FileOutputStream fileOutputStream = new FileOutputStream(mDropboxFile);
+                FileOutputStream fileOutputStream = new FileOutputStream(mDropBoxFile);
                 fileOutputStream.write(bitMapData);
                 fileOutputStream.flush();
                 fileOutputStream.close();
@@ -613,7 +613,7 @@ public class NoteDetailActivity extends BaseActivity
                 e.printStackTrace();
             }
 
-            DropboxImageUploadAsync uploadAsync = new DropboxImageUploadAsync(this, mApi, mDropboxFile, fileName);
+            DropboxImageUploadAsync uploadAsync = new DropboxImageUploadAsync(this, mApi, mDropBoxFile, fileName);
             uploadAsync.execute();
         }
         updateNote(values);
@@ -743,7 +743,7 @@ public class NoteDetailActivity extends BaseActivity
             }
         }
         if (mIsImageSet) {
-            mDropboxFile = new File(mImagePath);
+            mDropBoxFile = new File(mImagePath);
         }
 
     }

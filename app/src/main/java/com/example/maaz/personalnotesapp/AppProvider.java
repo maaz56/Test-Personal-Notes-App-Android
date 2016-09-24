@@ -67,9 +67,9 @@ public class AppProvider extends ContentProvider {
 
         switch (match) {
             case NOTES:
-                return NotesContract.Notes.CONTANT_TYPE;
+                return NotesContract.Notes.CONTENT_TYPE;
             case NOTES_ID:
-                return NotesContract.Notes.CONTANT_ITEM_TYPE;
+                return NotesContract.Notes.CONTENT_ITEM_TYPE;
             case ARCHIVES:
                 return ArchivesContract.Archives.CONTANT_TYPE;
             case ARCHIVES_ID:

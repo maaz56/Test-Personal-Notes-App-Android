@@ -24,8 +24,8 @@ public class NotesContract {
     public static final Uri URI_TABLE = BASE_CONTENT_URI.buildUpon().appendEncodedPath(PATH_NOTES).build();
 
     public static class Notes implements NotesColumns, BaseColumns {
-        public static final String CONTANT_TYPE = "vnd.android.cursor.dir/vnd." + CONTENT_AUTHORITY + "notes";
-        public static final String CONTANT_ITEM_TYPE = "vnd.android.cursor.item/vnd." + CONTENT_AUTHORITY + "notes";
+        public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd." + CONTENT_AUTHORITY + "notes";
+        public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd." + CONTENT_AUTHORITY + "notes";
 
         public static Uri buildNoteUri(String noteId) {
             return URI_TABLE.buildUpon().appendEncodedPath(noteId).build();

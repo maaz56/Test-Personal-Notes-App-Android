@@ -309,7 +309,7 @@ ADDED from /media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/src
 	android:readPermission
 		ADDED from /media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/src/main/AndroidManifest.xml:81:13-90
 	android:authorities
-		ADDED from /media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/src/main/AndroidManifest.xml:79:13-68
+		ADDED from /media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/src/main/AndroidManifest.xml:79:13-77
 	android:exported
 		ADDED from /media/maaz/Data/Development/Sample Projects/PersonalNotesApp/app/src/main/AndroidManifest.xml:80:13-36
 	android:name

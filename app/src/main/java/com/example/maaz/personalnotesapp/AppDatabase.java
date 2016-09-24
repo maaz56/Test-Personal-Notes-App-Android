@@ -29,28 +29,28 @@ public class AppDatabase extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE " + Tables.NOTES + " ("
                 + BaseColumns._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                + NotesContract.NotesColumns.NOTES_TITLE + " TEXT TO NULL,"
-                + NotesContract.NotesColumns.NOTES_DESCRIPTION + " TEXT TO NULL,"
-                + NotesContract.NotesColumns.NOTES_DATE + " TEXT TO NULL,"
-                + NotesContract.NotesColumns.NOTES_TIME + " TEXT TO NULL,"
-                + NotesContract.NotesColumns.NOTES_IMAGE + " TEXT TO NULL,"
-                + NotesContract.NotesColumns.NOTES_TITLE + " TEXT TO NULL,"
-                + NotesContract.NotesColumns.NOTES_IMAGE_STORAGE_SELECTION + " TEXT TO NULL)");
+                + NotesContract.NotesColumns.NOTES_TITLE + " TEXT NOT NULL,"
+                + NotesContract.NotesColumns.NOTES_DESCRIPTION + " TEXT NOT NULL,"
+                + NotesContract.NotesColumns.NOTES_DATE + " TEXT NOT NULL,"
+                + NotesContract.NotesColumns.NOTES_TIME + " TEXT NOT NULL,"
+                + NotesContract.NotesColumns.NOTES_IMAGE + " TEXT NOT NULL,"
+                + NotesContract.NotesColumns.NOTES_TYPE + " TEXT NOT NULL,"
+                + NotesContract.NotesColumns.NOTES_IMAGE_STORAGE_SELECTION + " TEXT NOT NULL)");
 
         db.execSQL("CREATE TABLE " + Tables.ARCHIVES + " ("
                 + BaseColumns._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                + ArchivesContract.ArchivesColumns.ARCHIVES_TITLE + " TEXT TO NULL,"
-                + ArchivesContract.ArchivesColumns.ARCHIVES_DESCRIPTION + " TEXT TO NULL,"
-                + ArchivesContract.ArchivesColumns.ARCHIVES_DATE_TIME + " TEXT TO NULL,"
-                + ArchivesContract.ArchivesColumns.ARCHIVES_CATEGORY + " TEXT TO NULL,"
-                + ArchivesContract.ArchivesColumns.ARCHIVES_TYPE + " TEXT TO NULL)");
+                + ArchivesContract.ArchivesColumns.ARCHIVES_TITLE + " TEXT NOT NULL,"
+                + ArchivesContract.ArchivesColumns.ARCHIVES_DESCRIPTION + " TEXT NOT NULL,"
+                + ArchivesContract.ArchivesColumns.ARCHIVES_DATE_TIME + " TEXT NOT NULL,"
+                + ArchivesContract.ArchivesColumns.ARCHIVES_CATEGORY + " TEXT NOT NULL,"
+                + ArchivesContract.ArchivesColumns.ARCHIVES_TYPE + " TEXT NOT NULL)");
 
 
         db.execSQL("CREATE TABLE " + Tables.TRASH + " ("
                 + BaseColumns._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                + TrashContract.TrashColumns.TRASH_TITLE + " TEXT TO NULL,"
-                + TrashContract.TrashColumns.TRASH_DESCRIPTION + " TEXT TO NULL,"
-                + TrashContract.TrashColumns.TRASH_DATE_TIME + " TEXT TO NULL)");
+                + TrashContract.TrashColumns.TRASH_TITLE + " TEXT NOT NULL,"
+                + TrashContract.TrashColumns.TRASH_DESCRIPTION + " TEXT NOT NULL,"
+                + TrashContract.TrashColumns.TRASH_DATE_TIME + " TEXT NOT NULL)");
     }
 
     @Override
