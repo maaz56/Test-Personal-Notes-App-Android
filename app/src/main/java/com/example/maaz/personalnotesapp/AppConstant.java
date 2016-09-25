@@ -11,7 +11,7 @@ public class AppConstant {
     public static final String LIST = "list";
     public static final String NORMAL = "normal";
 
-    public static final String LIST_NOTES= "reminder";
+    public static final String LIST_NOTES= "reminderList";
     public static final String DATE_PICKER= "camera";
     public static final String NO_IMAGE = "id";
     public static final String NO_TIME = "No Time";

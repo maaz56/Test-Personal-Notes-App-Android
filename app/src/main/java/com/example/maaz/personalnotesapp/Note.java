@@ -2,6 +2,7 @@ package com.example.maaz.personalnotesapp;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.Log;
 
 /**
  * Created by maaz on 7/6/16.
@@ -28,6 +29,9 @@ public class Note {
     public Note(String reminderString) {
 
         String[] fields = reminderString.split("\\$");
+        Log.d("fields length", fields.length + "");
+
+        Log.d("remider", reminderString);
         this.mType = fields[0];
         this.mId = Integer.parseInt(fields[1]);
         this.mTitle = fields[2];
@@ -41,15 +45,18 @@ public class Note {
             aNote.setImagePath(this.mImagePath);
         } else {
             String list = "";
-            for (int i = 7; i < fields.length; i++)
+            for (int i = 7; i < fields.length; i++){
                 list = list + fields[i];
-            this.mDescription = list;
+                this.mDescription = list;
+            }
+
         }
 
     }
 
     public String convertToString() {
         return mType + "$"
+                + mId + "$"
                 + mTitle + "$"
                 + mTime + "$"
                 + mImagePath + "$"

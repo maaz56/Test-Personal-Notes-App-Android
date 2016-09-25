@@ -466,7 +466,7 @@ public class NoteDetailActivity extends BaseActivity
                 break;
             case R.id.action_gallery:
                 mGoingToCameraOrGallery = true;
-                callCamera();
+                callGallery();
                 break;
             case android.R.id.home:
                 if (!mIsNotificationMode) {

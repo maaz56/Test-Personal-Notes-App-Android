@@ -390,12 +390,12 @@ public class NotesActivity extends BaseActivity implements
         if (isList == View.VISIBLE) {
             NoteCustomList noteCustomList = (NoteCustomList) linearLayout.getChildAt(0);
             listDescrption = noteCustomList.getLists();
-           /* for (int i = 0; i < noteCustomList.getChildCount(); i++) {
+           for (int i = 0; i < noteCustomList.getChildCount(); i++) {
                 LinearLayout first = (LinearLayout) noteCustomList.getChildAt(1);
                 CheckBox bx = (CheckBox) first.getChildAt(0);
                 TextView cx = (TextView) first.getChildAt(1);
                 listDescrption = description + cx.getText().toString() + bx.isChecked() + "%";
-            }*/
+            }
             values.put(ArchivesContract.ArchivesColumns.ARCHIVES_TYPE, AppConstant.LIST);
         } else {
             listDescrption = description.getText().toString();

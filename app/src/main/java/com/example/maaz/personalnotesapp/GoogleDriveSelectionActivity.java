@@ -18,8 +18,9 @@ public class GoogleDriveSelectionActivity extends GoogleDriveBaseActivity {
     private static DriveId mDriveId;
 
     @Override
-    public void onCreate(Bundle bundle) {
-        super.onCreate(bundle);
+    public void onConnected(Bundle bundle) {
+        super.onConnected(bundle);
+
         IntentSender intentSender = Drive.DriveApi
                 .newOpenFileActivityBuilder()
                 .setMimeType(new String[]{DriveFolder.MIME_TYPE})
@@ -60,6 +61,8 @@ public class GoogleDriveSelectionActivity extends GoogleDriveBaseActivity {
                 break;
         }
     }
+
+
 
     @Override
     public void onConnectionSuspended(int i) {
